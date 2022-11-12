@@ -35,7 +35,22 @@
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
+@media only screen and (max-width: 600px) {
+  .loader-line {
+    width: 200px;
+    height: 3px;
+    position: absolute;
+    top: 38%;
+    left: 13%;
+    overflow: hidden;
+    background-color: #ddd;
+    margin: 100px auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
 
+}
 @keyframes lineAnim {
   0% {
       left: -40%;
