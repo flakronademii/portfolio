@@ -1,0 +1,35 @@
+<section id="about" class="about-user">
+  <h2 class="title-heading">My Introduction</h2>
+  <div class="user__info">
+    <div class="user__pic">
+      <div id="pic-boundary">
+        <div class="profile-pic"></div>
+      </div>
+    </div>
+    <div class="user-desc">
+        <div *ngFor="let item of about$ | async">
+          <div [innerHTML]="item?.desc | mdToHtml"></div>
+        </div>
+        <br />
+        <p>Here are a few technologies I've been working with recently:</p>
+        <br />
+        <ul class="skills-list">
+
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>WordPress</li>
+          <li>Javascript</li>
+          <li>PHP</li>
+          <li>Angular</li>
+          <li>NodeJS</li>
+          <li>Angular</li>
+          <li>MongoDB</li>
+          <li>Express.js</li>
+          <li>PHP</li>
+          <li>Adobe Photoshop</li>
+          <li>Vegas Pro</li>
+        </ul>
+    </div>
+  </div>
+</section>
